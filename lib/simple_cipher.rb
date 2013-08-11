@@ -1,12 +1,10 @@
-
 require 'openssl'
 require 'active_support'
 
-
 require 'simple_cipher/version'
-require 'simple_ciper/config'
-require 'simple_ciper/core'
+require 'simple_cipher/config'
+require 'simple_cipher/core'
 
 module SimpleCipher
-  extend SimpleCipher::Core
+  include SimpleCipher::Core
 end
